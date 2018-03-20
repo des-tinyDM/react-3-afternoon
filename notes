@@ -1,0 +1,85 @@
+NOTES ON HTTP STUFF
+
+HTTP(S)
+hyper text trandfer protocol - 
+
+get information, you need to send request to a server
+>transfer to nearest data hub, if doesn't have requested data, pass
+>>send back .html file
+blog.devmou
+
+REST: way of interacting with data
+GET 
+PUT 
+PUSH 
+DELETE
+
+JSON - purpose of, agreed upon 'language' of the internet
+_______________________
+|        header       |  header - status codes
+|_____________________|   required info for taking care of request
+|         body        |  
+|_____________________|  data
+
+
+JSON 
+
+{
+    "superHero: {
+        "realName" : "Steve Rogers",
+        "heroName" : "Captain America",
+        "origin" : "ScientificExperiment",
+        "age": 95
+    }
+}
+
+property names are in quotes
+All quotes are double quoteValues are strings and numbers
+no trailing comma;
+
+
+{ 
+    "superHeros": [
+        {
+            "realName" : "Natasha Romanova",
+            "heroName" : "Black Widow",
+            "origin" : "Recruited for Black Widow Sleeper Warrior Program",
+            "age" : 35
+        },
+        {
+        "realName" : "Steve Rogers",
+        "heroName" : "Captain America",
+        "origin" : "ScientificExperiment",
+        "age": 95
+        }
+    ]
+}
+
+{ 
+    "Avengers" : {
+        "boss": "Nick Fury",
+        "hq" : 
+    }
+}
+
+
+REST = Representation State transfer 
+- set of rules for data transfer
+
+POST 
+GET 
+PUT update existing data on server
+DELETE delete existing data on server
+
+
+CRUD = set of functions to create a complete model 
+Create Read Update Delete
+
+
+url => 
+http://www.website/something = parameter
+? = query
+
+
+
+import axios from 'axios' 
