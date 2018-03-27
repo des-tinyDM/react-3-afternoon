@@ -98,7 +98,8 @@ export default class Post extends Component {
             editing
             ?
               <Edit text={text}
-                    hideEdit={ this.hideEdit } />
+                    hideEdit={ this.hideEdit } 
+                    updatePostFn={updatePostFn}/>
             :
               <span className="Post__text"> { text } </span>
           }
