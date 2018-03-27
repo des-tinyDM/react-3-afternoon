@@ -54,7 +54,7 @@ export default class Post extends Component {
       // const editing = this.state.editing
       // const showMasterMenu = this.state.showMasterMenu
     const { editing, showMasterMenu } = this.state;
-    const { text, date, id, deletePostFn } = this.props;
+    const { text, date, id, deletePostFn, updatePostFn } = this.props;
 
 
     return (
@@ -99,7 +99,8 @@ export default class Post extends Component {
             ?
               <Edit text={text}
                     hideEdit={ this.hideEdit } 
-                    updatePostFn={updatePostFn}/>
+                    updatePostFn={updatePostFn}
+                    id={id}/>
             :
               <span className="Post__text"> { text } </span>
           }
